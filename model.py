@@ -31,6 +31,9 @@ model.fit(X_train, y_train, epochs=5, batch_size=128)
 loss, accuracy = model.evaluate(X_test, y_test)
 print('Test accuracy:', accuracy)
 
+with open('metrics.txt', 'w') as outfile:
+  outfile.write(f'Test accuracy: {accuracy}')
+
 # Predict on a new image (optional)
 # new_image = ... (prepare your new image data here)
 # prediction = model.predict(new_image)
