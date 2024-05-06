@@ -1,2 +1,8 @@
-tensorflow
-keras
+# tensorflow
+# keras
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+wget
